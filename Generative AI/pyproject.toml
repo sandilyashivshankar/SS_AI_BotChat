@@ -1,0 +1,26 @@
+[project]
+name = "generative-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sandilyashivshankar", email = "shivshankartiwari312@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.14.0",
+    "huggingface-hub>=1.26.0",
+    "langchain>=1.3.14",
+    "langchain-core>=1.5.3",
+    "langchain-huggingface>=1.2.2",
+    "langchain-mistralai>=1.1.6",
+    "torch>=2.13.0",
+    "transformers>=5.14.1",
+]
+
+[project.scripts]
+generative-ai = "generative_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
